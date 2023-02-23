@@ -1,5 +1,6 @@
 package aula02;
 import java.util.Scanner;
+import Util.UserInput;
 
 public class Ex5 {
     public static void main(String[] args) {

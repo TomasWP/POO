@@ -1,7 +1,7 @@
 package aula02;
-
 import java.util.Scanner;
 import java.lang.Math;
+import Util.UserInput;
 
 public class Ex8 {
     public static void main(String[] args) {
