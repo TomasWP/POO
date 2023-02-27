@@ -54,4 +54,21 @@ public class UserInput {
             return false;
         }
     }
+    public static boolean primo(int number){
+        for (int i = 2; i < 10; i++){
+            if (number%i == 0 && number != i){
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public static int nota_final(double nota_teorica, double nota_pratica){
+        if (nota_pratica < 7 || nota_teorica < 7){
+            return 66;
+        } else {
+            double  nota_final = 0.4*nota_teorica + 0.6*nota_pratica;
+            return (int) Math.round(nota_final);
+        }
+    }
 }

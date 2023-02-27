@@ -1,27 +1,28 @@
 package aula03;
-import java.text.DecimalFormat;
 import java.util.Scanner;
-import java.lang.Math;
+import Util.UserInput;
 
 public class Ex1 {
     public static void main(String[] args) {
-        double notaP,notaT,nota_final;
+        boolean bool = true;
         Scanner sc = new Scanner(System.in);
-        DecimalFormat df = new DecimalFormat("00.0");
-        do {
-            System.out.println("Insira a nota da componente prática(0-20)!");
-            notaP = sc.nextDouble();
-            System.out.println("Insira a nota da componente teórica(0-20)!");
-            notaT = sc.nextDouble();
-        } while ((notaP >20 || notaT >20) || (notaP <0) ||(notaT <0));
-        sc.close();
-        df.format(notaP);
-        df.format(notaT);
-        if (notaP < 7 || notaT < 7){
-            System.out.println("66! Reprovado por nota minima!");
-        } else {
-            nota_final = 0.4*notaT + 0.6*notaP;
-            System.out.println("A sua nota final é de "+Math.round(nota_final)+"!");
+        int number = 0,soma;
+        try{
+            System.out.println("Insira um número inteiro positivo!");
+            while (bool){
+                number = sc.nextInt();
+                bool = UserInput.positivo(number);
+            }
+            soma = number;
+            for(int i = number-1; i>0; i--){
+                if(UserInput.primo(i)){
+                    soma += i;
+                }
+            }
+            System.out.println("A soma de todos os número primos até ao número "+number+" inclusive é "+soma+"!");
+        }catch(Exception e){
+            System.out.println("Insira um valor inteiro!");
         }
+        sc.close();
     }
 }
