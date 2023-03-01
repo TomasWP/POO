@@ -14,7 +14,7 @@ public class Ex1 {
                 bool = UserInput.positivo(number);
             }
             soma = number;
-            for(int i = number-1; i>0; i--){
+            for(int i = number-1; i>1; i--){
                 if(UserInput.primo(i)){
                     soma += i;
                 }

@@ -17,7 +17,7 @@ public class Ex4 {
             notas = new double[numero_alunos][numero_alunos];
             for (int i = 0; i<notas.length; i++){
                 for (int j = 0; j<notas[i].length; j++){
-                    notas [i][j] = Math.random()*20;
+                    notas [i][j] = Math.random()*20.1;
                 }
             }
             System.out.printf("%5s %7s %7s\n","NotaT","NotaP","Pauta\n");
