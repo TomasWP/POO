@@ -8,7 +8,7 @@ public class Ex3 {
         int random_number, number;
         String escolha = "s";
         try{
-            random_number = (int) (Math.random()*100.1)+1;
+            random_number = (int) (Math.random()*101)+1;
             System.out.println("Insira um número inteiro positivo de 1 a 100!");
             do{      
                     do{
