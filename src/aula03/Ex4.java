@@ -14,7 +14,8 @@ public class Ex4 {
                 numero_alunos = sc.nextInt();
                 bool = UserInput.positivo(numero_alunos);
             }
-            notas = new double[numero_alunos][numero_alunos];
+            notas = new double[2][numero_alunos];
+            System.out.println(notas.length);
             for (int i = 0; i<notas.length; i++){
                 for (int j = 0; j<notas[i].length; j++){
                     notas [i][j] = Math.random()*20.1;
