@@ -42,6 +42,16 @@ public class Retangulo {
     }
 
     @Override
+	public boolean equals(Object obj) {
+		if (this == obj) return true;
+		if (obj == null) return false;
+		if (getClass() != obj.getClass()) return false;
+
+		Retangulo retangulo = (Retangulo) obj;
+		return this.comprimento == retangulo.comprimento && this.altura == retangulo.altura;
+	}
+
+    @Override
     public String toString() {
         String output = "Comprimento - "+getAltura()+"\n Altura - "+getComprimento()+"\n Perimetro - "+getPerimetro()+"\n Area - "+getArea();
         return output;

@@ -47,6 +47,16 @@ public class Triangulo {
     }
 
     @Override
+	public boolean equals(Object obj) {
+		if (this == obj) return true;
+		if (obj == null) return false;
+		if (getClass() != obj.getClass()) return false;
+
+		Triangulo triangulo = (Triangulo) obj;
+		return this.lado_1 == triangulo.lado_1 && this.lado_2 == triangulo.lado_2 && this.lado_3 == triangulo.lado_3;
+	}
+
+    @Override
     public String toString() {
         String output = "Lado 1 - "+getLado(1)+"\n Lado 2 - "+getLado(2)+"\n Lado 3 - "+getLado(3)+"Perimetro - "+getPerimetro()+"\n Area - "+getArea();
         return output;

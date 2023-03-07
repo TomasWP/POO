@@ -32,6 +32,16 @@ public class Circulo {
     }
 
     @Override
+	public boolean equals(Object obj) {
+		if (this == obj) return true;
+		if (obj == null) return false;
+		if (getClass() != obj.getClass()) return false;
+
+		Circulo circulo = (Circulo) obj;
+		return this.raio == circulo.raio;
+	}
+
+    @Override
     public String toString() {
         String output = "Raio - "+getRaio()+"\n Perimetro - "+getPerimetro()+"\n Area - "+getArea();
         return output;
