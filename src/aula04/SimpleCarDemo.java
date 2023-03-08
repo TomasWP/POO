@@ -1,3 +1,4 @@
+package aula04;
 import java.util.Scanner;
 
 class Car {
@@ -14,7 +15,28 @@ class Car {
     }
 
     public void drive(int distance) {
-        //TODO: acumular distância percorrida
+        this.kms += distance;
+    }
+
+    public String getMake() {
+        return make;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public int getYear() {
+        return year;
+    }
+
+    public int getKms() {
+        return kms;
+    }
+
+    public String toString(){
+        String output = (this.getMake()+" "+this.getModel()+", "+this.getYear()+", kms: "+this.getKms());
+        return output;
     }
 }
 
@@ -23,31 +45,45 @@ public class SimpleCarDemo {
     static Scanner sc = new Scanner(System.in);
 
     static void listCars(Car[] cars) {
-        // TODO: lista todos os carros registados
-        // Exemplo de resultado
-        // Carros registados: 
-        // Renault Megane Sport Tourer, 2015, kms: 35356
-        // Toyota Camry, 2010, kms: 32456
-        // Mercedes Vito, 2008, kms: 273891
+      
+        System.out.println("Carros registados:\n");
+        for(Car carro: cars){
+            System.out.println(carro);
+        }
     }
 
     public static void main(String[] args) {
 
-        Car[] cars = // TODO: completar
-        cars[0] = // TODO: completar
-        cars[1] = // TODO: completar
-        cars[2] = // TODO: completar
+        Car[] cars = new Car[3];
+        cars[0] = new Car("Renault Megane", "Sport Tourer", 2015, 35356);
+        cars[1] = new Car("Toyota", "Camry", 2010, 32456);
+        cars[2] = new Car("Mercedes", "Vito", 2008, 273891);
 
         listCars(cars);
-
+        
+        System.out.println("\n");
         // Adicionar 10 viagens geradas aleatoriamente
         for (int i=0; i<10; i++) {
             int j = (int)Math.round(Math.random()*2); // escolhe um dos 3 carros
             int kms = (int)Math.round(Math.random()*1000); // viagem até 1000 kms
             System.out.printf("Carro %d viajou %d quilómetros.\n", j, kms);
             
-            // TODO: adicionar viagem ao carro j
+            switch(j){
+                case 0:
+                    cars[0].drive(kms);
+                    break;
+                case 1:
+                    cars[1].drive(kms);
+                    break;
+                case 2:
+                    cars[2].drive(kms);
+                    break;
+                default:
+                    System.out.println("Nenhum carro registado a este número!");
+                    break;
+            }
         }
+        System.out.println("\n");
 
         listCars(cars);
 
