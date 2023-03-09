@@ -71,4 +71,9 @@ public class UserInput {
             return (int) Math.round(nota_final);
         }
     }
+
+    public static boolean is_numeric(String elemento){
+        boolean isNumeric =  elemento.matches("[+-]?\\d*(\\.\\d+)?");
+        return isNumeric;
+    }
 }
