@@ -23,10 +23,6 @@ class Car {
         this.kms += distance;
     }
 
-    public String getMake() {
-        return make;
-    }
-
 }
 
 public class CarDemo {
@@ -34,7 +30,6 @@ public class CarDemo {
     static Scanner sc = new Scanner(System.in);
 
     static int registerCars(Car[] cars) {
-
         String[] input = {}, marca = {};
         String frase;
         boolean bool = true;
