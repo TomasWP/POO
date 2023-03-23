@@ -3,7 +3,7 @@ package aula05;
 public class Calendar {
 
     int firstWeekdayOfYear;
-    static int year;
+    public static int year;
     static int events[][] = new int[12][];
 
     public Calendar(int firstWeekdayOfYear, int year){

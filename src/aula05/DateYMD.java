@@ -122,7 +122,7 @@ public class DateYMD {
     }
 
     public String toString() {
-        String output = Integer.toString(getYear())+"-"+Integer.toString(getMonth())+"-"+Integer.toString(day);
+        String output = Integer.toString(day)+"-"+Integer.toString(getMonth())+"-"+Integer.toString(getYear());
         return output;
     }
 }
