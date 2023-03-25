@@ -1,4 +1,5 @@
 package aula06;
+import Util.UserInput;
 import aula05.DateYMD;
 
 public class Bolseiro extends Aluno{
@@ -8,6 +9,9 @@ public class Bolseiro extends Aluno{
 
     public Bolseiro(String nome, int cc, DateYMD dataNasc, Professor orientador, int bolsa){
         super(nome, cc, dataNasc, null);
+        if(UserInput.positivo(bolsa)|| !valid(nome, cc, dataNasc.getDay(), dataNasc.getMonth(), dataNasc.getYear())){
+            throw new IllegalArgumentException("O contacto não é válido");
+        }
         this.orientador = orientador.getNome();
         this.bolsa = bolsa;
     }

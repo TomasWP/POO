@@ -1,6 +1,5 @@
 package aula06;
 import java.util.regex.Pattern;
-
 import aula05.DateYMD;
 
 public class Contacto extends Pessoa{
@@ -13,7 +12,7 @@ public class Contacto extends Pessoa{
     public Contacto(String nome, int cc, DateYMD dataNasc, String telemovel, String email){
         
         super(nome, cc, dataNasc);
-        if(!valid(telemovel, email)){
+        if(valid(telemovel, email) || !valid(nome, cc, dataNasc.getDay(), dataNasc.getMonth(), dataNasc.getYear())){
             throw new IllegalArgumentException("O contacto não é válido");
         }
         this.email = email;

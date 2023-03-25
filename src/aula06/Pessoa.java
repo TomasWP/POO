@@ -28,15 +28,21 @@ public class Pessoa {
     }
 
     public void setNome(String nome) {
-        this.nome = nome;
+        if(validName(nome)){
+            this.nome = nome;
+        }
     }
 
     public void setCc(int cc) {
-        this.cc = cc;
+        if(validCC(cc)){
+            this.cc = cc;
+        }
     }
 
     public void setDataNasc(DateYMD dataNasc) {
-        this.dataNasc = dataNasc;
+        if(DateYMD.valid(dataNasc.getDay(), dataNasc.getMonth(), dataNasc.getYear())){
+            this.dataNasc = dataNasc;
+        }
     }
 
     public static boolean validName(String nome){
@@ -55,8 +61,8 @@ public class Pessoa {
         return false;
     }
 
-    public static boolean valid(String nome, int cc){
-        if(validName(nome) && validCC(cc)){
+    public static boolean valid(String nome, int cc, int day, int month, int year){
+        if(DateYMD.valid(day, month, year) && validName(nome) && validCC(cc)){
             return true;
         }
         return false;

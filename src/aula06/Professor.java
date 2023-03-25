@@ -7,6 +7,9 @@ public class Professor extends Pessoa {
     
     public Professor(String nome, int cc, DateYMD dataNasc, String categoria, String departamento){
         super(nome, cc, dataNasc);
+        if(!valid(nome, cc, dataNasc.getDay(), dataNasc.getMonth(), dataNasc.getYear())){
+            throw new IllegalArgumentException("O contacto não é válido");
+        }
         this.categoria = categoria;
         this.departamento = departamento;
     }

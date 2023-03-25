@@ -10,6 +10,9 @@ public class Aluno extends Pessoa{
 
     public Aluno(String nome, int cc, DateYMD dataNasc, DateYMD data_inscricao){
         super(nome, cc, dataNasc);
+        if(!valid(nome, cc, data_inscricao.getDay(), data_inscricao.getMonth(), data_inscricao.getYear())){
+            throw new IllegalArgumentException("O contacto não é válido");
+        }
         this.N_Mec = sequencial();
         this.data_inscricao = data_inscricao;
     }
@@ -34,7 +37,9 @@ public class Aluno extends Pessoa{
             Integer mes = dataAtual.get(Calendar.MONTH);
             Integer dia_do_Mes = dataAtual.get(Calendar.DAY_OF_MONTH);
             data_inscricao = new DateYMD(ano, mes, dia_do_Mes);
-            this.data_inscricao = data_inscricao;
+            if(DateYMD.valid(dia_do_Mes, mes, ano)){
+                this.data_inscricao = data_inscricao;
+            }
         }
         this.data_inscricao = data_inscricao;
     }
