@@ -1,5 +1,4 @@
 package aula10;
-import java.util.*;
 
 public class Ex2 {
     public static void main(String[] args) {
@@ -14,14 +13,6 @@ public class Ex2 {
         Livro livro_historia = new Livro("Sapiens: Uma Breve História da Humanidade", "Yuval Noah Harari", 2011);
         Livro livro_historia_2 = new Livro("The Handmaid's Tale", "Margaret Atwood", 1985);
 
-        Set<Livro> drama = new HashSet<>();
-        Set<Livro> romance = new HashSet<>();
-        Set<Livro> ficcao = new HashSet<>();
-        Set<Livro> biografia = new HashSet<>();
-        Set<Livro> historia = new HashSet<>();
-
-        livros.put
-
         livros.adicionarLivro("Drama", livro_drama);
         livros.adicionarLivro("Romance", livro_romance);
         livros.adicionarLivro("Ficção", livro_ficcao);
@@ -31,7 +22,7 @@ public class Ex2 {
 
         System.out.println(livros);
 
-        livros.alterarLivro("Romance", livro_historia, livro_historia_2);
+        livros.alterarLivro("História", livro_historia, livro_historia_2);
         livros.removerLivro("Biografia", livro_biografia);
 
         System.out.println(livros);

@@ -20,7 +20,7 @@ public class Ex1 {
 
         System.out.println(livros);
 
-        livros.alterarLivro("Romance", livro_historia_2);
+        livros.alterarLivro("História", livro_historia_2);
         livros.removerLivro("Biografia");
 
         System.out.println(livros);
