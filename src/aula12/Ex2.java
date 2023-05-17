@@ -42,6 +42,8 @@ public class Ex2 {
                 }
             }
         }
+        input.close();
+
         for (Map.Entry<Character, ArrayList<String>> entry : words.entrySet()) {
             int n = 0;
             for(String word : entry.getValue()){
