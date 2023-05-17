@@ -21,7 +21,7 @@ public class Ex1 {
                 }else{
                     for (String valor : words.get(word)) {
                         String next_word = input.next().replaceAll("[\\t\\n.,:'‘’;?!\\-*{}=+&/()\\[\\]”“\"']", "");
-                        if(next_word.length()<3){
+                        if(next_word.length()>3){
                             next_word = "";
                         }
                         if(valor.contains(next_word)){

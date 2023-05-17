@@ -25,7 +25,7 @@ public class Gradebook {
             grades.add(Double.parseDouble(tokens[1]));
             grades.add(Double.parseDouble(tokens[2]));
             grades.add(Double.parseDouble(tokens[3]));
-            Student student = new Student(tokens[0], grades);
+            Student student = new Student(tokens[0],grades);
             this.students.put(tokens[0], student);
         }
         input.close();
@@ -56,7 +56,7 @@ public class Gradebook {
 
     public void printAllStudents() {
         for (Student student : students.values()) {
-            System.out.println(student.getName()+" - "+student.getGrades());
+            System.out.println(student);
         }
     }
 }

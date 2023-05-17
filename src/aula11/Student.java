@@ -29,6 +29,6 @@ public class Student {
 
     @Override
     public String toString() {
-        return this.name+" - "+this.getGrades();
+        return this.name+" = "+this.getGrades().toString();
     }
 }

@@ -20,7 +20,7 @@ public class GradebookTester {
 
         // Retrieve a student from the collection
         Student student = gradebook.getStudent("John Doe");
-        System.out.println("Estudante: "+student.toString());
+        System.out.println("Estudante: "+student);
 
         // Calculate the average grade for a specific student
         double averageGrade = gradebook.calculateAverageGrade("John Doe");
