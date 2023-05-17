@@ -19,6 +19,7 @@ public class Ex1 {
                 n++;
             }
         }
+        input.close();
         System.out.println("Número Total de Palavras: "+n);
         System.out.println("Número de Diferentes Palavras: "+words.size());
     }
