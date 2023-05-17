@@ -24,9 +24,6 @@ public class Ex2 {
                     list.add(word+", 1");
                     words.put(first_char,list);
                 }else{
-                    //System.out.println(word);
-                    //System.out.println("set"+words.get(first_char));
-                    //System.out.println(words.get(first_char).contains(word));
                     for(String word_in_list : words.get(first_char)){
                         String[] split = word_in_list.split(", ");
                         if(word.equals(split[0])){
