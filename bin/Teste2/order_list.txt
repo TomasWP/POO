@@ -1,0 +1,32 @@
+Customer ID; Store ID; Order Composition; Order Date and Time; Type of order
+
+1; 101; Sandes de Queijo :3.0 | Café :2.5 | 2023-05-01; Express
+2; 102; Bolo de Chocolate :5.5 | Cappuccino :4.5 | 2023-05-01; Normal
+3; 103; Pão Francês :1.0 | �?gua Mineral :1.5 | 2023-05-01; Express
+4; 104; Sandes de Presunto :4.0 | Café com Leite :3.5 | 2023-05-02; Normal
+5; 105; Chá de Erva-Cidreira :2.0 | Torta de Frango :6.0 | 2023-05-02; Normal
+6; 101; Coca-Cola :3.5 | Tosta Mista :5.0 | 2023-05-03; Express
+7; 103; Sandes de Queijo :3.0 | Café Expresso :2.5 | 2023-05-03; Normal
+8; 102; Bolo de Cenoura :5.0 | Cappuccino :4.5 | 2023-05-04; Express
+9; 104; Salada de Frutas :4.5 | Sumo de Laranja :3.0 | 2023-05-04; Normal
+10; 105; Sandes de Frango :6.5 | Refrigerante Guaraná :3.0 | 2023-05-05; Normal
+11; 101; Sandes de Queijo :3.0 | Café com Leite :3.5 | 2023-05-05; Express
+12; 103; Croissant :2.5 | Café Expresso :2.5 | 2023-05-06; Normal
+13; 102; Bolo de Chocolate :5.5 | Chá de Hortelã :2.0 | 2023-05-06; Express
+14; 104; Pão Francês :1.0 | �?gua Mineral :1.5 | 2023-05-07; Normal
+15; 105; Sandes de Presunto :4.0 | Café :2.5 | 2023-05-07; Express
+16; 101; Chá de Camomila :2.0 | Salgado de Queijo :2.5 | 2023-05-08; Normal
+17; 103; Refrigerante Coca-Cola :3.5 | Tosta Mista :5.0 | 2023-05-08; Normal
+18; 102; Bolo de Cenoura :5.0 | Café com Leite :3.5 | 2023-05-09; Express
+19; 104; Café Expresso :2.5 | Sumo de Laranja :3.0 | 2023-05-09; Express
+20; 105; Chá de Erva-Cidreira :2.0 | Torta de Frango :6.0 | 2023-05-09; Express
+21; 101; Sandes de Queijo :3.0 | Tosta Mista :5.0 | Café com Leite :3.5 | Refrigerante Guaraná :3.0 | 2023-05-10; Normal
+22; 103; Pão Francês :1.0 | Croissant :2.5 | Café Expresso :2.5 | �?gua Mineral :1.5 | 2023-05-10; Express
+23; 102; Bolo de Cenoura :5.0 | Chá de Hortelã :2.0 | Cappuccino :4.5 | 2023-05-11; Express
+24; 104; Salada de Frutas :4.5 | Sandes de Frango :6.5 | Sumo de Laranja :3.0 | 2023-05-11; Normal
+25; 105; Sandes de Presunto :4.0 | Café :2.5 | 2023-05-12; Express
+26; 101; Sandes de Queijo :3.0 | Tosta Mista :5.0 | Café com Leite :3.5 | Refrigerante Guaraná :3.0 | 2023-05-12; Normal
+27; 103; Pão Francês :1.0 | Croissant :2.5 | Café Expresso :2.5 | �?gua Mineral :1.5 | 2023-05-13; Express
+28; 102; Bolo de Cenoura :5.0 | Chá de Hortelã :2.0 | Cappuccino :4.5 | 2023-05-13; Express
+29; 104; Salada de Frutas :4.5 | Sandes de Frango :6.5 | Sumo de Laranja :3.0 | 2023-05-14; Normal
+30; 105; Sandes de Presunto :4.0 | Café :2.5 | Chá de Erva-Cidreira :2.0 | Torta de Frango :6.0 | 2023-05-14; Express
