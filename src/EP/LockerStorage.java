@@ -5,7 +5,7 @@ public class LockerStorage extends StorageUnit{
     private int duracao;
     public LockerStorage(String localizacao, int[] dimensoes, int preco){
         super(localizacao, dimensoes, preco);
-        this.duracao = 5*365;
+        this.duracao = 30;
     }
 
     public void setDuracao(int duracao){
