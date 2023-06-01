@@ -17,6 +17,10 @@ public class WarehouseStorage extends StorageUnit {
         return duracao;
     }
 
+    public String getType(){
+        return "Warehouse";
+    }
+
     @Override
     public String toString(){
         return "Duração = "+duracao;

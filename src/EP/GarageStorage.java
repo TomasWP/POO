@@ -16,6 +16,10 @@ public class GarageStorage extends StorageUnit{
         return duracao;
     }
 
+    public String getType(){
+        return "Garage";
+    }
+
     @Override
     public String toString(){
         return "Duração = "+duracao;

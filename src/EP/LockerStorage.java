@@ -16,6 +16,10 @@ public class LockerStorage extends StorageUnit{
         return duracao;
     }
 
+    public String getType(){
+        return "Locker";
+    }
+
     @Override
     public String toString(){
         return "Duração = "+duracao;
